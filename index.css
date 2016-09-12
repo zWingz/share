@@ -1,0 +1,110 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+}
+ .container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 80%;
+    margin: 10px auto;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+ }
+
+ .item {
+    width: 200px;
+    border: 1px solid #ddd;
+    height: 200px;
+    margin: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+ }
+
+.share {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+/* 斜向条纹 */
+.share1 {
+    background: linear-gradient(45deg,#ddd 0%,#ddd,25%,red 25%,red 50%,#ddd 50%,#ddd 75%,red 0%);
+    background-size: 28.284px 28.284px;
+    /* background-size: 30px 30px; */
+}
+
+ /* 边框内圆角 */
+ .share2{
+    background: tan;
+    border-radius: 12px;
+    padding: 10px;
+    outline: 5px solid #ddd;
+    box-shadow: 0px 0px 0 5px #ddd;
+ }
+
+ /* 斜向条纹加强版 */
+ .share3 {
+    background: repeating-linear-gradient(60deg,#ddd,#ddd 15px,red 0,red 30px);
+ }
+
+ .share4 {
+    background-image: linear-gradient(90deg,rgba(220,20,60,0.5) 50%,transparent 0),
+                            linear-gradient(rgba(220,20,60,0.5) 50%,transparent 0);
+    background-size: 30px 30px;
+
+ }
+
+
+ /* 波点 */
+ .share5{
+    background: #655;
+    background-image: radial-gradient(tan 30%,transparent 0),
+                            radial-gradient(tan 30%,transparent 0);
+    background-size: 20px 20px;
+    background-position:  0 0,10px 10px;
+ }
+
+/* 条纹边框 */
+ .share6 {
+    padding: 10px;
+    background-image: linear-gradient(#ddd,#ddd),
+                            repeating-linear-gradient(-45deg,red 0,red 12.5%,transparent 0,transparent 25%,#58a 0,#58a 37.5%,transparent 0,transparent 50%);
+    background-size: cover,5em 5em;
+    background-clip: padding-box,border-box;
+
+    border: 10px solid transparent;
+ }
+
+ .share7 {
+    background: #ddd;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom-right-radius: 50% 0;
+    border-bottom-left-radius: 50% 0;
+ }
+
+  .share8 {
+    background: #ddd;
+    border-top-left-radius: 100% 50%;
+    border-top-right-radius: 0 0;
+    border-bottom-right-radius: 0 0;
+    border-bottom-left-radius: 100% 50%;
+ }
